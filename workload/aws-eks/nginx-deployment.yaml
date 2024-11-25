@@ -17,8 +17,8 @@ spec:
     spec:
       automountServiceAccountToken: false
       containers:
-      - name: hello-world
-        image: busybox
+      - name: 2048-games
+        image: public.ecr.aws/l6m2t8p7/docker-2048:latest
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
