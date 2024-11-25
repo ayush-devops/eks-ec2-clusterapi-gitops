@@ -17,8 +17,8 @@ spec:
     spec:
       automountServiceAccountToken: false
       containers:
-      - name: nginx
-        image: nginxinc/nginx-unprivileged:stable-alpine
+      - name: hello-world
+        image: hello-world
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
