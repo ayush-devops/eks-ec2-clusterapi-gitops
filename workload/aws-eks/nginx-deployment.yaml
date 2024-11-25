@@ -18,9 +18,7 @@ spec:
       automountServiceAccountToken: false
       containers:
       - name: hello-world
-        image: hello-world
-        command: ["/bin/sleep"]
-        args: ["infinity"]
+        image: httpd:latest
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
