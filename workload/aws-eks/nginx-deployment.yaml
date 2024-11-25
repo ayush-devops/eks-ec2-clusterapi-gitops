@@ -33,13 +33,13 @@ spec:
             port: 8080
           initialDelaySeconds: 3
           periodSeconds: 3
-        securityContext:
-          allowPrivilegeEscalation: false
-          runAsNonRoot: true
-          runAsUser: 10014
-          capabilities:
-            drop:
-              - ALL
+      #  securityContext:
+       #   allowPrivilegeEscalation: false
+         # runAsNonRoot: true
+          #runAsUser: 10014
+         # capabilities:
+          #  drop:
+           #   - ALL
         resources:
           requests:
             memory: "128Mi"
